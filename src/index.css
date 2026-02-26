@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme 
+{
+  --color-nexus-bg: #050505;
+  --color-nexus-card: #0e0e0e;
+  --color-nexus-accent: #00ff9d;
+  --color-nexus-secondary: #2d2d2d;
+  --color-nexus-text: #e0e0e0;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #050505;
+  font-family: "Courier New", Courier, monospace;
+  color: #e0e0e0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff9d44;
+}
+
+/* Neon glow on focused input */
+input:focus {
+  outline: none;
+}
+
+/* Smooth transitions globally */
+button {
+  transition: all 0.2s ease;
+}
+
