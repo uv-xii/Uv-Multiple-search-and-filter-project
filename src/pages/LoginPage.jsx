@@ -172,8 +172,6 @@ navigate("/app");
     </div>
   );
 }
-<div style={{ color: "white", background: "red", padding: "20px" }}>
-  TEST - Login Page is rendering
-</div>
+
 
 
