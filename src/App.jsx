@@ -353,12 +353,12 @@ function MainApp() {
 // ── Root App with Router ──
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/app" element={<MainApp />} />
-        <Route path="*" element={<Navigate to="/login" />} />
-      </Routes>
-    </BrowserRouter>
+    <HashRouter>
+  <Routes>
+    <Route path="/login" element={<LoginPage />} />
+    <Route path="/app" element={<MainApp />} />
+    <Route path="*" element={<Navigate to="/login" />} />
+  </Routes>
+</HashRouter>
   );
 }
